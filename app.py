@@ -9,7 +9,7 @@ app = Flask(__name__).
 
 
 # function converted to coroutine
-async def get_xkcd_image(session):
+async def get_xkcd_image(session):...//.//../
     random = randint(0, 300)
     result = await session.get(f'http://xkcd.com/{random}/info.0.json') # dont wait for the response of API
     return result.json()['img']
